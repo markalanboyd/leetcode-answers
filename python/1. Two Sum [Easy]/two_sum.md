@@ -1,12 +1,9 @@
 # Intuition
-
-[View post on Leetcode](https://leetcode.com/problems/two-sum/solutions/4263472/two-clever-for-my-own-good-o-n-solution/)
-
 The problem is to find two numbers within an array that add up to a specific target. The intuition is that if the target is odd, it can only be achieved by adding an even to an odd number. If the target is even, it could be the sum of two even numbers or two odd numbers.
 
 I thought this was a pretty clever approach conceptually until I realized how slow it was having to iterate through the lists so many times.
 
-[A much better solution can be found here.](https://leetcode.com/problems/two-sum/solutions/4014830/easy-python-solution-with-explanation/)
+
 
 # Approach
 The solution is broken down into helper functions:
@@ -19,6 +16,10 @@ If the target is odd, it uses `add_even_to_odd`. If even, it tries both `unique_
 # Complexity
 - **Time complexity:** O(n²) due to the nested loops over the pairs of numbers within the even and odd lists.
 - **Space complexity:** O(n) for the additional even and odd number lists, which together are at most `n` in size.
+
+# Critique
+
+[A much better solution can be found here.](https://leetcode.com/problems/two-sum/solutions/4014830/easy-python-solution-with-explanation/)
 
 # Code
 
