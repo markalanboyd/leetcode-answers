@@ -17,7 +17,7 @@ The solution is broken down into helper functions:
 If the target is odd, it uses `add_even_to_odd`. If even, it tries both `unique_add_list` with evens and odds.
 
 # Complexity
-- **Time complexity:** O(n^2) due to the nested loops over the pairs of numbers within the even and odd lists.
+- **Time complexity:** O(n²) due to the nested loops over the pairs of numbers within the even and odd lists.
 - **Space complexity:** O(n) for the additional even and odd number lists, which together are at most `n` in size.
 
 # Code
